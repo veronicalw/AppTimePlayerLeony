@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:padding="4dp">
+
+    <ImageView
+        android:id="@+id/imgNotif1"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/chronometer" />
+
+    <TextView
+        android:id="@+id/txtNotif1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/imgNotif1"
+        android:text="Chronometer Time Player"
+        android:textAppearance="@android:style/TextAppearance.StatusBar.EventContent.Title"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txtNotif2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNotif1"
+        android:layout_toEndOf="@id/imgNotif1"
+        android:text="Your App is running"
+        android:textColor="@color/black"
+        android:textSize="8sp" />
+
+    <TextView
+        android:id="@+id/textNotifTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:textColor="@color/purple2"
+        android:textSize="20sp"
+        android:singleLine="true"
+        android:layout_below="@+id/txtNotif2"
+        android:layout_toEndOf="@id/imgNotif1"/>
+
+    <ImageButton
+        android:id="@+id/btnPlay"
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:layout_toRightOf="@id/txtNotif2"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_launcher_blackplay_foreground"
+        android:elevation="2dp"/>
+    <ImageButton
+        android:id="@+id/btnReset"
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:layout_toRightOf="@id/btnPlay"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/reset_foreground"
+        android:elevation="2dp"/>
+    <ImageButton
+        android:id="@+id/btnStop"
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:layout_toRightOf="@id/btnReset"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/ic_launcher_blackstop_foreground"
+        android:elevation="2dp"/>
+</RelativeLayout>

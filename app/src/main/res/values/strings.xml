@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="timelable_shortcut">Time Player</string>
+</resources>
