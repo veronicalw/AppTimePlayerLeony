@@ -7,7 +7,7 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/timer"
-        android:label="TimNo+ by Leony"
+        android:label="TimeNote+ by Leony"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
