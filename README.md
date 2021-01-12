@@ -1,6 +1,6 @@
 # Time Player Apps with Android Java
 
-![TimeNote+ by Leony](https://user-images.githubusercontent.com/43403489/104318951-baff5500-5512-11eb-9032-822cd306c7f8.png)
+![TIMENOTE+ by Leony (2)](https://user-images.githubusercontent.com/43403489/104323549-e08f5d00-5518-11eb-86b7-a0b5dad9f640.png)
 
 TimeNote+ is an application built with android java programming language that supports android O and above. This application features consist of : 
 
