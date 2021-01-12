@@ -13,7 +13,10 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.Menu;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.myapplication.R;
@@ -26,8 +29,9 @@ import com.example.myapplication.TimePlayer.MyServices.TimeContainer;
 public class TimePlayer extends AppCompatActivity implements PropertyChangeListener {
     TextView chronometer;
     ImageButton btnStart, btnStop;
+    ImageView imgView;
     Timer timer;
-
+    Animation rotation;
     public static Handler handler;
 
     public final Runnable runnable = new Runnable() {
@@ -45,6 +49,8 @@ public class TimePlayer extends AppCompatActivity implements PropertyChangeListe
         chronometer = findViewById(R.id.timerChronometer);
         btnStart = findViewById(R.id.btnTimerChronoStart);
         btnStop = findViewById(R.id.btnTimerChronoStop);
+        imgView = findViewById(R.id.imgView);
+        rotation = AnimationUtils.loadAnimation(TimePlayer.this, R.anim.rotation);
         handler = new Handler();
     }
 
@@ -89,15 +95,18 @@ public class TimePlayer extends AppCompatActivity implements PropertyChangeListe
         if (timeContainer.getCurrentState() == TimeContainer.STATE_RUNNING) {
             TimeContainer.getInstance().pause();
             btnStart.setImageDrawable(getResources().getDrawable(R.drawable.ic_launcher_play_foreground));
+            rotation.cancel();
         } else {
             TimeContainer.getInstance().start();
             startUpdateTimer();
             btnStart.setImageDrawable(getResources().getDrawable(R.drawable.ic_launcher_resume_foreground));
+            imgView.startAnimation(rotation);
         }
     }
 
     public void reset(View view) {
         TimeContainer.getInstance().reset();
+        rotation.cancel();
         updateTimerText();
     }
 

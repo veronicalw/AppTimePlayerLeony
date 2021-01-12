@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp"
+        android:hint="Title"
+        android:textColorHint="@color/purple2"
+        android:textSize="12dp"
+        android:inputType="text"
+        android:background="@drawable/button"
+        android:maxLines="1"
+        android:textColor="@color/purple1"
+        android:padding="12dp"/>
+
+    <EditText
+        android:id="@+id/edtDetail"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp"
+        android:hint="Your Note"
+        android:textColorHint="@color/purple2"
+        android:layout_marginTop="24dp"
+        android:textSize="12dp"
+        android:inputType="text"
+        android:background="@drawable/button"
+        android:maxLines="2"
+        android:textColor="@color/purple1"
+        android:padding="12dp"/>
+
+    <Button
+        android:id="@+id/edtTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp"
+        android:hint="Set Your Alarm"
+        android:textColorHint="@color/purple1"
+        android:layout_marginTop="24dp"
+        android:textSize="16sp"
+        android:backgroundTint="@color/white"
+        android:padding="12dp"/>
+
+</LinearLayout>

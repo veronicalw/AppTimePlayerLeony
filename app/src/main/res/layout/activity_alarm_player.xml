@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlarmPlayer.AlarmPlayer">
+
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="fitXY"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/imageheader" >
+
+        <LinearLayout
+            android:id="@+id/linearlayout2"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/alarmcircle">
+
+            <TextClock
+                android:id="@+id/timeNow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textColor="@color/white"
+                android:textSize="48sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="192dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/linearlayout1"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/noteplusme" />
+
+    <ImageButton
+        android:id="@+id/btnAdd"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/linearlayout1"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="11dp"
+        android:layout_toEndOf="@id/imgView"
+        android:background="@drawable/plus" />
+
+    <View
+        android:layout_width="370dp"
+        android:layout_height="1dp"
+        android:background="@color/purple2"
+        android:layout_below="@id/imgView"
+        android:layout_centerHorizontal="true"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleView"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnAdd"
+        android:scrollbars="none"/>
+
+    <TextView
+        android:id="@+id/copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="Copyright L.V.W 2021"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/recycleView"/>
+</RelativeLayout>
