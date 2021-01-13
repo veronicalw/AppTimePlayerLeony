@@ -24,7 +24,7 @@ public class OptionActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(OptionActivity.this, TimePlayer.class);
                 startActivity(intent);
-                finish();
+//                finish();
             }
         });
 
@@ -33,7 +33,7 @@ public class OptionActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(OptionActivity.this, AlarmPlayer.class);
                 startActivity(intent);
-                finish();
+//                finish();
             }
         });
     }

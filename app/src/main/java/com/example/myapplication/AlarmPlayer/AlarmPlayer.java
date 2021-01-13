@@ -64,7 +64,7 @@ public class AlarmPlayer extends AppCompatActivity implements TimePickerDialog.O
 
         } else {
             noteView.setVisibility(View.GONE);
-            Toast.makeText(this, "You have note any less, please add one", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "You don't have note(s), please add one", Toast.LENGTH_LONG).show();
         }
         btnAdd = findViewById(R.id.btnAdd);
         btnAdd.setOnClickListener(new View.OnClickListener() {
