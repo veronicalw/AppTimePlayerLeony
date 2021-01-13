@@ -13,7 +13,7 @@ TimeNote+ uses a number of open source projects to work properly:
 
 * [SQLite] - note data store
 * [TimePicker] - timepicker for alarm
-* [NotificationChannel] - notification updates on android oreo
+* [NotificationChannel] - notification updates on android Oreo and above
 * [Java] - programming language
 * [SDK] - minimal SDK
 
